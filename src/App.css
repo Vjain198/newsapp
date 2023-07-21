@@ -131,4 +131,15 @@ button:hover{
         min-width: 35rem;
         padding: 2rem;
      }
+     .stories-div-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
 }
