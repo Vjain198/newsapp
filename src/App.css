@@ -40,6 +40,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 }
 .stories-div-items{
     display: grid;
@@ -96,7 +97,7 @@ input{
 .pagination-btn{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 button{
