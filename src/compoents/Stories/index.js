@@ -7,6 +7,12 @@ const Stories = () => {
     return <h1>Data is fetching.....</h1>;
   }
 
+  const handleRedirect = (url) => {
+    if (window) {
+      window.location.href = url;
+    }
+  };
+
   return (
     <>
       <div className="stories-div">
@@ -15,14 +21,14 @@ const Stories = () => {
             const { title, author, objectID, url, num_comments } = currPost;
             return (
               <div key={objectID} className="card">
-                <h2>{title}</h2>
+                <h2 onClick={() => handleRedirect(url)}>{title}</h2>
                 <p>
                   ✍️&nbsp; By <span>{author}</span> &nbsp;|&nbsp; 💬 &nbsp;
                   <span>{num_comments}</span> comments
                 </p>
                 <div className="card-button">
                   <a href={url}>Read more</a>
-                  <a href="#" onClick={() => removePost(objectID)}>
+                  <a href="/" onClick={() => removePost(objectID)}>
                     Remove
                   </a>
                 </div>

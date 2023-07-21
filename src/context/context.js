@@ -65,7 +65,7 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     let timerOut = setTimeout(() => {
       fetchApiData(`${NEWS_API()}query=${state.query}&page=${state.page}`);
-    }, 1000);
+    }, 300);
 
     return () => clearTimeout(timerOut);
   }, [state.query, state.page]);

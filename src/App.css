@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;60');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -22,7 +22,7 @@ h1{
 }
 
 h2{
-    font-family: "IBM Plex Serif" , serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.4rem;
 }
 p{
@@ -55,6 +55,14 @@ span{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 0.5rem;
     color: #15133c;
+}
+h2{
+    cursor: pointer;
+
+}
+h2:hover{
+    text-decoration: underline;
+    color: red;
 }
 .card-button{
     width: 100%;
