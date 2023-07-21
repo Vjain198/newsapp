@@ -40,8 +40,12 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 4rem;
+}
+.stories-div-items{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(200px, 1fr));
+    gap: 3rem;
+
 }
 .card{
     min-width: 20rem;
@@ -96,6 +100,9 @@ button{
     margin: 3rem;
     cursor: pointer;
     display: inline-block;
+}
+button:hover{
+    filter: brightness(2);
 }
 
 @media (max-width:998px){
